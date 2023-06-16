@@ -76,6 +76,6 @@
 * chat js
 
 
-# /*************************** React testing apps  *********************/
+## React testing apps  
 
 Jest 
