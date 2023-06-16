@@ -1,7 +1,6 @@
 # Basic React Learning :
 
-    1. Hello World
-     
+    1. Hello World   
     2. Introducing JSX
     3. Rendering Elements
     4. Components and Props
@@ -24,57 +23,57 @@
     6. useMemo
     7. useCallback
 
-## /********************\********************* react important ********************\*\*\*********************/
+##  React important 
 
-react Router Dom (package)
-react hook form
-react Authentication : firebase and api (jwt token)
-react State Management : Redux and Graphql
-react styleComponent : daisy ui , ant design , material ui , react bootatrap
+* react Router Dom (package)
+* react hook form
+* react Authentication : firebase and api (jwt token)
+* react State Management : Redux and Graphql
+* react styleComponent : daisy ui , ant design , material ui , react bootatrap
 
-## /************\*\*\*\************* react Ecosystem ************************\*\*************************/
+##  React Ecosystem 
 
-TypeScript - For fastest in this site
-Gatsby — For static site generation.
-Next.js — For service site rendered apps.
+* TypeScript - For fastest in this site
+* Gatsby — For static site generation.
+* Next.js — For service site rendered apps.
 
-## /************\************* Api Clints **************************\*\*\*\***************************/
-Rest Api :- featch/axois/async await / SWR
-GraphQl :- api
+##  Api Clints 
+* Rest Api :- featch/axois/async await / SWR
+* GraphQl :- api
 
-## /**********\*\*\*\*********** 50 important package **********************\*\*\*\***********************/
+##  50 important package 
 
-dnd
-axois
-cleave js
-cogo Test
-export from json
-LocalForage
-react cir progress
-react code input
-currency format
-fast marque
-react icons
-react select
-react tooltip
-react lazy load
-react window
-react excel file
-toast
-sweet alert
-tree
-recharts
-Storybook
-React Testing Library
-Classname and clsx
-React Table
-React DnD
-React Spring
-React Hook Form
-Styles Components
-Emotion
-Tailwind CSS
-chat js
+* dnd
+* axois
+* cleave js
+* cogo Test
+* export from json
+* LocalForage
+* react cir progress
+* react code input
+* currency format
+* fast marque
+* react icons
+* react select
+* react tooltip
+* react lazy load
+* react window
+* react excel file
+* toast
+* sweet alert
+* tree
+* recharts
+* Storybook
+* React Testing Library
+* Classname and clsx
+* React Table
+* React DnD
+* React Spring
+* React Hook Form
+* Styles Components
+* Emotion
+* Tailwind CSS
+* chat js
 
 
 # /*************************** React testing apps  *********************/
