@@ -1,11 +1,12 @@
 
 import './App.css';
 import ParentComponent from './components/LiftingState/ParentComponent';
+import PropsInReact from './components/Props/PropsInReact';
 import ReactEvents from './components/reactEvents/ReactEvents';
 
 function App() {
   return (
-    <div className="App">
+    <div>
 
       {/* react events  */}
 
@@ -13,7 +14,11 @@ function App() {
 
       {/* for lifting State in react  */}
 
-         <ParentComponent />
+         {/* <ParentComponent /> */}
+
+      {/* props details  */}
+
+      <PropsInReact />
     </div>
   );
 }

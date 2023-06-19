@@ -1,0 +1,101 @@
+/*************** Which Type data to Pass as props *****************
+
+1. String 
+2. Array
+3. Object
+4. Function 
+
+
+
+In React, there are primarily three ways to get data from parent components to child components using props:
+
+1. **Passing Data as Props**: 
+
+The most common way is to pass data from a parent component to a child component by simply including the data as a prop when rendering the child component. The child component can access and use the data through the props object. Here's an example:
+
+```jsx
+
+// Parent component
+const ParentComponent = () => {
+  const data = 'Hello from parent!';
+
+  return (
+    <div>
+      <ChildComponent data={data} />
+    </div>
+  );
+};
+
+// Child component
+const ChildComponent = ({ data }) => {
+  return (
+    <div>
+      <p>{data}</p>
+    </div>
+  );
+};
+```
+
+2. **Accessing Props using `this.props`**:
+
+ If you're working with class components instead of functional components, you can access props using the `this.props` syntax. Here's an example:
+
+```jsx
+// Parent component
+class ParentComponent extends React.Component {
+  render() {
+    const data = 'Hello from parent!';
+
+    return (
+      <div>
+        <ChildComponent data={data} />
+      </div>
+    );
+  }
+}
+
+// Child component
+class ChildComponent extends React.Component {
+  render() {
+    return (
+      <div>
+        <p>{this.props.data}</p>
+      </div>
+    );
+  }
+}
+```
+
+3. **Context API**: The Context API in React allows you to pass data down through the component tree without explicitly passing it as props at every level. It provides a way to share data across multiple components. The data is provided at a higher level (parent or ancestor component) and can be accessed by child components that subscribe to the context. Here's a basic example:
+
+```jsx
+const DataContext = React.createContext();
+
+// Parent component
+const ParentComponent = () => {
+  const data = 'Hello from parent!';
+
+  return (
+    <DataContext.Provider value={data}>
+      <ChildComponent />
+    </DataContext.Provider>
+  );
+};
+
+// Child component
+const ChildComponent = () => {
+  return (
+    <DataContext.Consumer>
+      {(data) => (
+        <div>
+          <p>{data}</p>
+        </div>
+      )}
+    </DataContext.Consumer>
+  );
+};
+```
+
+In this example, the `ParentComponent` wraps the `ChildComponent` inside the `DataContext.Provider` component, passing the data value as the `value` prop. The `ChildComponent` uses the `DataContext.Consumer` component to access the data value using a render prop function.
+
+These are the commonly used methods to get data from parent components to child components in React. Each method has its own use cases, and the choice depends on the specific requirements and structure of your application.
