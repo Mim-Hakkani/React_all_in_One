@@ -2,7 +2,7 @@ import React from 'react';
 
 const PassDataAsString = (props) => {
 
- console.log("props Data :: ", props);
+//  console.log("props Data :: ", props);
     return (
         <div style={{border:'1px solid gray'}}>
             <h3>Name is : {props.name}</h3>
