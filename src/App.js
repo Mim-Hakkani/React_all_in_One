@@ -24,7 +24,7 @@ function App() {
 
       {/* props details  */}
 
-        {/* <PropsInReact /> */}
+        <PropsInReact />
 
 
 

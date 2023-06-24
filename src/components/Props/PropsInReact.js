@@ -38,7 +38,7 @@ const users = [
             <PassDataAsObject objData = {skills}/>
         </div>
 
-        <PassDataAsArray />
+        <PassDataAsArray users={users}/>
         </>
       
     );
