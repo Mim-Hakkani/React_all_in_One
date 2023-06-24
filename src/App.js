@@ -6,6 +6,7 @@ import PropsInReact from './components/Props/PropsInReact';
 import BarcodeScanner from './components/barcodeGenerator/BarcodeScanner';
 import BarcodeScanner2 from './components/barcodeGenerator/BarcodeScanner2';
 import ConditionalRendering from './components/conditionalRendering/ConditionalRendering';
+import NormalForm from './components/form/NormalForm';
 import ReactEvents from './components/reactEvents/ReactEvents';
 
 function App() {
@@ -46,7 +47,12 @@ function App() {
 
       {/* List and keys example  */}
 
-      <ListAndKeys />
+      {/* <ListAndKeys /> */}
+
+
+      {/* react form examle  */}
+
+      <NormalForm />
  
     </div>
   );
