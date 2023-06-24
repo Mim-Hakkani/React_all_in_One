@@ -1,6 +1,7 @@
 import React from 'react';
 import PassDataAsString from './PassDataAsString';
 import PassDataAsObject from './PassDataAsObject';
+import PassDataAsArray from './PassDataAsArray';
 
 const PropsInReact = () => {
 
@@ -15,6 +16,14 @@ const PropsInReact = () => {
         }
     }
 
+    // pass data as array 
+
+const users = [
+  { id: 1, name: 'John Doe', email: 'johndoe@example.com' },
+  { id: 2, name: 'Jane Smith', email: 'janesmith@example.com' },
+  { id: 3, name: 'Bob Johnson', email: 'bobjohnson@example.com' },
+];
+
 
     return (
         <> 
@@ -28,6 +37,8 @@ const PropsInReact = () => {
         <div>
             <PassDataAsObject objData = {skills}/>
         </div>
+
+        <PassDataAsArray />
         </>
       
     );

@@ -2,6 +2,8 @@
 import './App.css';
 import ParentComponent from './components/LiftingState/ParentComponent';
 import PropsInReact from './components/Props/PropsInReact';
+import BarcodeScanner from './components/barcodeGenerator/BarcodeScanner';
+import BarcodeScanner2 from './components/barcodeGenerator/BarcodeScanner2';
 import ReactEvents from './components/reactEvents/ReactEvents';
 
 function App() {
@@ -18,7 +20,19 @@ function App() {
 
       {/* props details  */}
 
-      <PropsInReact />
+      {/* <PropsInReact /> */}
+
+      {/* barcode scanner  */}
+        
+        {/* this is the barcode generator code  */}
+
+      <BarcodeScanner />
+
+
+    {/* barcode Reader  */}
+    {/* <p>Hellow mim </p> */}
+
+    <BarcodeScanner2 />
     </div>
   );
 }
