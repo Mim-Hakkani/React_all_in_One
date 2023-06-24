@@ -62,6 +62,17 @@ function NormalForm() {
     e.preventDefault();
     // Handle form submission logic here
     // You can access the form values through state variables (name, email, etc.)
+
+    console.log("name",name);
+    console.log("email",email);
+    console.log("password",password);
+    console.log("message",message);
+    console.log("gender",gender);
+    console.log("age",age);
+    console.log("avatar",avatar);
+    console.log("dob",dob);
+    console.log("country",country);
+    console.log("hobby",hobby);
   };
 
 
@@ -203,6 +214,7 @@ function NormalForm() {
         <option value="uk">United Kingdom</option>
         <option value="au">Australia</option>
         <option value="jp">Japan</option>
+        <option value="bn">Bangladesh</option>
       </select>
 
       <label style={labelStyle}>Hobbies:</label>
@@ -233,6 +245,21 @@ function NormalForm() {
 
       <input type="submit" value="Submit" style={submitButtonStyle} />
     </form>
+
+    <div>
+
+        formData : 
+        <p>Name : {name}</p>
+        <p>Email : {email}</p>
+        <p>Password : {password}</p>
+        <p>Age : {age}</p>
+        <p>Gender : {gender}</p>
+        <p>Country : {country}</p>
+        <p>Hobby : {hobby}</p>
+        {/* <p>{avatar[0]}</p> */}
+        <p>DateOfBirth : {dob}</p>
+       
+    </div>
 </div>
   );
 }
