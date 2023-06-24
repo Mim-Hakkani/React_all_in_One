@@ -1,6 +1,7 @@
 
 import './App.css';
 import ParentComponent from './components/LiftingState/ParentComponent';
+import ListAndKeys from './components/ListAndKeys/ListAndKeys';
 import PropsInReact from './components/Props/PropsInReact';
 import BarcodeScanner from './components/barcodeGenerator/BarcodeScanner';
 import BarcodeScanner2 from './components/barcodeGenerator/BarcodeScanner2';
@@ -40,7 +41,12 @@ function App() {
 
       {/* Conditional Rendering  */}
 
-      <ConditionalRendering />
+         {/* <ConditionalRendering /> */}
+
+
+      {/* List and keys example  */}
+
+      <ListAndKeys />
  
     </div>
   );
