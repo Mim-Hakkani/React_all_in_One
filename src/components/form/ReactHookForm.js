@@ -8,12 +8,12 @@ const ReactHookForm  = () => {
     formState: { errors },
   } = useForm({
     defaultValues:{
-     name:"Hakkani",
-     email:"mim@gmail.com",
-     password:"12345",
-     gender:'female',
-     messages:'hi',
-     hobby:"meat"
+     name:"",
+     email:"",
+     password:"",
+     gender:'',
+     messages:'',
+     hobby:""
 
     }
   });
@@ -71,9 +71,13 @@ const ReactHookForm  = () => {
           name="password"
           placeholder="Enter your password"
         //   onChange={(e) => setPassword(e.target.value)}
-          {...register('password', { required: true })}
+          {...register('password', { required: "this is required" ,minLength:{
+            value:6,
+            message:"lenteh is 6"
+          }})}
         />
-        {errors.password && <p>{errors.password.message}</p>}
+        {/* {console.log(errors)} */}
+        <p>{errors.password?.message}</p>
       </div>
 
 
@@ -99,6 +103,27 @@ const ReactHookForm  = () => {
         <option value="other">other</option>
       </select>
        </>
+
+    {/* Validation  : 
+    
+    // if any is required 
+    required  
+
+    for number type : 
+    min
+    max
+
+   // apply all input field 
+    minLength
+    maxLength
+    pattern
+    validate
+    
+    */}
+
+       <input {...register("firstName", { required: true, maxLength: 20 })} />
+      <input {...register("lastName", { pattern: /^[A-Za-z]+$/i })} />
+      <input type="number" {...register("age", { min: 18, max: 99 })} />
      
 
       
