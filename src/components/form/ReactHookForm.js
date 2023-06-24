@@ -19,6 +19,9 @@ const ReactHookForm  = () => {
 
   return (
     <form onSubmit={handleSubmit(handleFormSubmit)}>
+
+        {/* Text  */}
+
       <div>
         <label htmlFor="name">Name</label>
         <input
@@ -34,6 +37,10 @@ const ReactHookForm  = () => {
         />
         {errors.name && <p>{errors.name.message}</p>}
       </div>
+
+      {/* Email  */}
+
+
       <div>
         <label htmlFor="email">Email</label>
         <input
@@ -47,6 +54,10 @@ const ReactHookForm  = () => {
         {errors.email && <p>{errors.email.message}</p>}
       </div>
       <div>
+
+        {/* Password  */}
+
+
         <label htmlFor="password">Password</label>
         <input
           type="password"
@@ -58,6 +69,11 @@ const ReactHookForm  = () => {
         />
         {errors.password && <p>{errors.password.message}</p>}
       </div>
+
+
+        {/* Textarea   */} 
+
+
       <div>
         <label htmlFor="message">Message</label>
         <textarea
@@ -69,10 +85,48 @@ const ReactHookForm  = () => {
         />
       </div>
 
+      {/* Select  */}
+      <>  <label>Hobby</label>
+       <select {...register("hobby")}>
+        <option value="fish">fish</option>
+        <option value="meat">meat</option>
+        <option value="other">other</option>
+      </select>
+       </>
+     
+
+      
+      {/* Radio  */}
+
+       <div>
+        <label>Gender</label>
+        <input
+          type="radio"
+          id="male"
+          name="gender"
+          value="male"
+        //   checked={gender === 'male'}
+        //   onChange={(e) => setGender(e.target.value)}
+          {...register('gender', {required: true})}
+        />
+        <label htmlFor="male">Male</label>
+        <input
+          type="radio"
+          id="female"
+          name="gender"
+          value="female"
+        //   checked={gender === 'female'}
+        //   onChange={(e) => setGender(e.target.value)}
+          {...register('gender', {required: true})}
+        />
+        <label htmlFor="female">Female</label>
+      </div>
+      {errors.gender && <p>{errors.gender.message}</p>}
+
 
       {/* hook form advanced label  */}
       <button type="submit">Submit</button>
-      
+
     </form>
   );
 };
