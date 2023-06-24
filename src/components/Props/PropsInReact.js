@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PassDataAsString from './PassDataAsString';
 import PassDataAsObject from './PassDataAsObject';
 import PassDataAsArray from './PassDataAsArray';
+import PassDataAsfunction from './PassDataAsfunction';
 
 const PropsInReact = () => {
 
@@ -24,6 +25,17 @@ const users = [
   { id: 3, name: 'Bob Johnson', email: 'bobjohnson@example.com' },
 ];
 
+// pass data as a function 
+
+
+
+const personalInfo = (info)=>{
+   console.log("::",info);
+    return `My name is ${info.name}\n. i am a ${info.designation}`
+ 
+}
+
+
 
     return (
         <> 
@@ -39,6 +51,10 @@ const users = [
         </div>
 
         <PassDataAsArray users={users}/>
+
+
+        {/* pass data as a function  */}
+        <PassDataAsfunction personalInfo={personalInfo} />
         </>
       
     );

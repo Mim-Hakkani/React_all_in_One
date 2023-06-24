@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PassDataAsObject = ({ objData }) => {
-	console.log('Ami object Data :: ', objData);
+	// console.log('Ami object Data :: ', objData);
 
 	const skillNames = Object.keys(objData);
 
@@ -12,14 +12,14 @@ const PassDataAsObject = ({ objData }) => {
 
 			<dl>
 				{skillNames.map((skillName) => (
-					<>
+					<div key={skillName}>
 						<dt>{skillName}</dt>
 						{skillName === 'academic' &&
-							objData.academic.map((academicSkill) => <dd>{academicSkill}</dd>)}
+							objData.academic.map((academicSkill,index) => <dd key={index}>{academicSkill}</dd>)}
 
 						{skillName === 'technical' &&
-							objData.technical.map((technicalSkill) => (
-								<dd>{technicalSkill}</dd>
+							objData.technical.map((technicalSkill,index) => (
+								<dd key={index}>{technicalSkill}</dd>
 							))}
 
 						{skillName === 'other' && (
@@ -28,7 +28,7 @@ const PassDataAsObject = ({ objData }) => {
 								<dd>{objData.other.entertainment}</dd>
 							</>
 						)}
-					</>
+					</div>
 				))}
 			</dl>
 		</div>
