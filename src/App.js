@@ -4,6 +4,7 @@ import ParentComponent from './components/LiftingState/ParentComponent';
 import PropsInReact from './components/Props/PropsInReact';
 import BarcodeScanner from './components/barcodeGenerator/BarcodeScanner';
 import BarcodeScanner2 from './components/barcodeGenerator/BarcodeScanner2';
+import ConditionalRendering from './components/conditionalRendering/ConditionalRendering';
 import ReactEvents from './components/reactEvents/ReactEvents';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
 
       {/* props details  */}
 
-        <PropsInReact />
+        {/* <PropsInReact /> */}
 
 
 
@@ -36,6 +37,10 @@ function App() {
         {/* barcode Reader  */}
     
             {/* <BarcodeScanner2 /> */}
+
+      {/* Conditional Rendering  */}
+
+      <ConditionalRendering />
  
     </div>
   );

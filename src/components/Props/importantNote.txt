@@ -41,6 +41,8 @@ const ChildComponent = ({ data }) => {
  If you're working with class components instead of functional components, you can access props using the `this.props` syntax. Here's an example:
 
 ```jsx
+
+
 // Parent component
 class ParentComponent extends React.Component {
   render() {
