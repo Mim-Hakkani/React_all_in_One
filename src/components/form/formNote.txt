@@ -52,3 +52,23 @@ Submit Button: Initiates the form submission process when clicked.
   
   <input type="submit" value="Submit">
 </form>
+
+
+************************************************************************
+Sure, here are the main differences between normal forms and React Hook Forms:
+
+* **Normal forms use state management libraries like Redux or Context API to manage form state.** React Hook Forms uses the `useForm()` hook to manage form state. This makes it easier to create and manage forms, and it can improve performance.
+
+* **Normal forms require more code to create and manage forms.** React Hook Forms uses hooks, which are a concise way to write React code. This makes it easier to create and manage forms, and it can improve readability and maintainability.
+
+* **Normal forms are not as flexible as React Hook Forms.** React Hook Forms provides a number of hooks that make it easy to add validation, conditional rendering, and other features to forms. This makes it easier to create complex forms.
+
+Here is a table that summarizes the key differences between normal forms and React Hook Forms:
+
+ Normal Forms | React Hook Forms |
+
+1.State management | State management libraries like Redux or Context API | `useForm()` hook 
+2. Code required | More code | Less code |
+3. Flexibility | Less flexible | More flexible |
+
+Overall, React Hook Forms is a more modern and efficient way to create and manage forms in React. If you are looking for a way to create forms that are easy to write, maintain, and scale, then React Hook Forms is a good option.

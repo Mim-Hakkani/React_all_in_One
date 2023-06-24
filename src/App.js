@@ -7,6 +7,7 @@ import BarcodeScanner from './components/barcodeGenerator/BarcodeScanner';
 import BarcodeScanner2 from './components/barcodeGenerator/BarcodeScanner2';
 import ConditionalRendering from './components/conditionalRendering/ConditionalRendering';
 import NormalForm from './components/form/NormalForm';
+import ReactHookForm from './components/form/ReactHookForm';
 import ReactEvents from './components/reactEvents/ReactEvents';
 
 function App() {
@@ -52,7 +53,9 @@ function App() {
 
       {/* react form examle  */}
 
-      <NormalForm />
+         {/* <NormalForm /> */}
+
+         <ReactHookForm />
  
     </div>
   );
