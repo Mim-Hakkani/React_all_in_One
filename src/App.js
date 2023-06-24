@@ -14,25 +14,29 @@ function App() {
 
          {/* <ReactEvents /> */}
 
+
       {/* for lifting State in react  */}
 
          {/* <ParentComponent /> */}
 
+
+
+
       {/* props details  */}
 
-      {/* <PropsInReact /> */}
+        {/* <PropsInReact /> */}
+
+
 
       {/* barcode scanner  */}
         
         {/* this is the barcode generator code  */}
 
-      <BarcodeScanner />
-
-
-    {/* barcode Reader  */}
-    {/* <p>Hellow mim </p> */}
-
-    <BarcodeScanner2 />
+            {/* <BarcodeScanner /> */}
+        {/* barcode Reader  */}
+    
+            {/* <BarcodeScanner2 /> */}
+ 
     </div>
   );
 }
