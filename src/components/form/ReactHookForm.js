@@ -6,12 +6,18 @@ const ReactHookForm  = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({
+    defaultValues:{
+     name:"Hakkani",
+     email:"mim@gmail.com",
+     password:"12345",
+     gender:'female',
+     messages:'hi',
+     hobby:"meat"
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [message, setMessage] = useState('');
+    }
+  });
+
 
   const handleFormSubmit = (data) => {
     console.log(data);
@@ -105,8 +111,6 @@ const ReactHookForm  = () => {
           id="male"
           name="gender"
           value="male"
-        //   checked={gender === 'male'}
-        //   onChange={(e) => setGender(e.target.value)}
           {...register('gender', {required: true})}
         />
         <label htmlFor="male">Male</label>
@@ -115,8 +119,6 @@ const ReactHookForm  = () => {
           id="female"
           name="gender"
           value="female"
-        //   checked={gender === 'female'}
-        //   onChange={(e) => setGender(e.target.value)}
           {...register('gender', {required: true})}
         />
         <label htmlFor="female">Female</label>
