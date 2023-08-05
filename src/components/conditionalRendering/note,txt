@@ -1,0 +1,51 @@
+
+1.if-else statement:
+
+render() {
+  if (condition) {
+    return <div>Element A</div>;
+  } else {
+    return <div>Element B</div>;
+  }
+}
+
+2. ternary operator 
+
+render() {
+  return (
+    <div>
+      {condition ? <div>Element A</div> : <div>Element B</div>}
+    </div>
+  );
+}
+
+
+3. Logial && operation 
+render() {
+  return (
+    <div>
+      {condition && <div>Element A</div>}
+    </div>
+  );
+}
+
+
+4.variales as functions 
+
+renderElement() {
+  if (condition) {
+    return <div>Element A</div>;
+  } else {
+    return <div>Element B</div>;
+  }
+}
+
+render() {
+  return (
+    <div>
+      {this.renderElement()}
+    </div>
+  );
+}
+
+
